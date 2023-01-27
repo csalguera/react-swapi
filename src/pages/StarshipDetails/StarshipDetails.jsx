@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { getStarshipDetails } from '../../services/sw-api'
+import PilotList from '../../components/PilotList'
 
 import './StarshipDetails.css'
 
@@ -26,6 +27,7 @@ const StarshipDetails = () => {
             <div className='details-container'>
               <h3>{starshipDetails.name}</h3>
               <h4>Model: {starshipDetails.model}</h4>
+              <PilotList />
               <Link to='/' className='link'><h4>Return to Starships</h4></Link>
             </div>
           </main>
