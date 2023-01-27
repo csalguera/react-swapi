@@ -1,20 +1,18 @@
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.starship-card {
-  background-color: black;
-  color: white;
-  border-radius: 24px;
-  height: 200px;
-  width: 400px;
-  margin: 8px;
+main {
+  height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.starship-card:hover {
-  font-weight: bold;
+.details-container {
+  background-color: black;
+  color: white;
+  border-radius: 24px;
+  height: 200px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
