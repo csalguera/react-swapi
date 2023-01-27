@@ -1,4 +1,5 @@
-const PilotList = () => {
+const PilotList = ({ starshipDetails }) => {
+  console.log(starshipDetails);
   return (
     <>
       <h4>Pilots: </h4>
