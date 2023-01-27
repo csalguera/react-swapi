@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { getStarshipList } from '../../services/sw-api';
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { getStarshipList } from '../../services/sw-api'
 
 const StarshipList = () => {
   const [starshipList, setStarshipList] = useState([])
@@ -18,7 +19,7 @@ const StarshipList = () => {
         <div className='card-container'>
           {starshipList.map(starship =>
             <div className='starship-card' key={starship.name}>
-              {starship.name}
+              <Link to='/starship' state={{starship}}>{starship.name}</Link>
             </div>
           )}
         </div>
