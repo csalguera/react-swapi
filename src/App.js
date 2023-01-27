@@ -15,15 +15,15 @@ function App() {
 
   return (
     <>
-      <h1>Starships</h1>
+      <h1>Star Wars Starships</h1>
       {starshipList.length ?
-        <>
+        <div className='card-container'>
           {starshipList.map(starship =>
-            <div key={starship.name}>
+            <div className='starship-card' key={starship.name}>
               {starship.name}
             </div>
           )}
-        </>
+        </div>
         :
         <>
           <h4>Loading starships...</h4>
