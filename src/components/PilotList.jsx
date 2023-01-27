@@ -4,7 +4,7 @@ import { getPilots } from "../services/sw-api";
 
 import './PilotList.css'
 
-const PilotList = ({ starshipDetails }) => {
+const PilotList = () => {
   const [pilots, setPilots] = useState({})
   const location = useLocation()
 
