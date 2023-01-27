@@ -19,7 +19,7 @@ function App() {
       {starshipList.length ?
         <>
           {starshipList.map(starship =>
-            <div>
+            <div key={starship.name}>
               {starship.name}
             </div>
           )}
