@@ -1,6 +1,7 @@
 main {
   height: inherit;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -19,7 +20,7 @@ main {
 
 .link
 h4 {
-  color: white;
+  color: black;
 }
 
 .link
