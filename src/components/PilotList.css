@@ -1,0 +1,8 @@
+.pilots-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pilot-name {
+  margin: 4px 0 auto;
+}
