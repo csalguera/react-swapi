@@ -5,20 +5,3 @@ h1 {
   text-align: center;
   padding: 8px;
 }
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.starship-card {
-  border: solid 1px black;
-  background-color: black;
-  color: white;
-  height: 200px;
-  width: 400px;
-  margin: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

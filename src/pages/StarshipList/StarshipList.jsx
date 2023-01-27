@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import './StarshipList.css'
 import { getStarshipList } from '../../services/sw-api'
 
 const StarshipList = () => {
@@ -18,9 +19,16 @@ const StarshipList = () => {
       {starshipList.length ?
         <div className='card-container'>
           {starshipList.map(starship =>
-            <div className='starship-card' key={starship.name}>
-              <Link to='/starship' state={{starship}}>{starship.name}</Link>
-            </div>
+            <Link
+            to='/starship'
+            state={{starship}}
+            key={starship.name}
+            className="link"
+            >
+              <div className='starship-card'>
+                <p>{starship.name}</p>
+              </div>
+            </Link>
           )}
         </div>
         :
